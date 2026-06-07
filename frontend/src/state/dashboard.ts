@@ -1,5 +1,5 @@
 import { localFeatures, localKpis, operationRecords } from "../data/workbench";
-import type { OverviewResponse } from "../types";
+import type { OverviewResponse, ReservationStatus, ViolationType } from "../types";
 import { APP_CODE, APP_NAME } from "../constants/app";
 
 export function createFallbackOverview(): OverviewResponse {
@@ -10,5 +10,16 @@ export function createFallbackOverview(): OverviewResponse {
     features: localFeatures,
     kpis: localKpis,
     records: operationRecords,
+    stats: {
+      equipmentCount: 10,
+      userCount: 4,
+      todayReservations: 0,
+      todayCompleted: 0,
+      todayPending: 0,
+      todayCheckedIn: 0,
+      totalViolations: 0,
+    },
+    upcomingReservations: [],
+    recentViolations: [],
   };
 }

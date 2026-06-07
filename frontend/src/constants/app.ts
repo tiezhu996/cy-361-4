@@ -5,9 +5,12 @@ export const FRONTEND_PORT = 28501;
 export const BACKEND_PORT = 29501;
 
 export const APP_THEME = {
-  paper: "#f8f3ea",
-  ink: "#17201b",
-  accent: "#2f7d5b",
-  warm: "#d98f45",
-  surface: "#e6dbc8",
+  paper: "#fafafa",
+  ink: "#1f1f1f",
+  accent: "#1677ff",
+  warm: "#fa8c16",
+  surface: "#ffffff",
+  cool: "#13c2c2",
+  danger: "#ff4d4f",
+  neutral: "#8c8c8c",
 };
